@@ -1,5 +1,6 @@
 select
     project.pname,
+    project.pnumber,
     sum(works_on.hours) as tot_hours
 from
     works_on, project
