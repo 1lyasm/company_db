@@ -173,9 +173,9 @@ select hottest_proj();
 
 drop type empl_info;
 
-create type empl_info as (fname text, lname text, 
+create type empl_info as (fname text, lname text,
 						 salary numeric);
-						 
+
 drop function retrieve(numeric, numeric);
 
 create or replace function retrieve(proj_no numeric, base_salary numeric)
